@@ -1,7 +1,7 @@
 import { Button } from 'react-bootstrap'
 import { Form } from 'react-bootstrap'
 import '../static/fonts.css'
-// import emailjs from '@emailjs/browser'
+import emailjs from '@emailjs/browser'
 import { useState } from 'react'
 
 
@@ -18,14 +18,14 @@ const ContactForm = () => {
     e.preventDefault()
 
     emailjs.send(
-      'service_4kblnma',
-      'template_tiwwoam',
+      'SERVICE_KEY_HERE',
+      'TEMPLATE_KEY_HERE',
       {
         name: formData.name,
         email: formData.email,
         message: formData.message,
       },
-      'igo6C_vuTi7-iFHl1'
+      'PUBLIC_KEY_HERE_IN_ACCOUNT_TAB'
     ).then(() => {
       setSuccessMessage("Message sent, thank you. I'll get back to you soon")
       setFormData({ name: '', email: '', message: '' })
@@ -38,9 +38,9 @@ const ContactForm = () => {
 
   return (
     <div>
-      {successMessage && <p className='rukulo-regular' style={{ fontFamily: 'ruluko', color: 'lightgreen', fontSize: '2rem' }}>{successMessage}</p>}
+      {successMessage && <p className='rukulo-regular' style={{ fontFamily: 'ruluko', color: 'lightgreen', fontSize: '2.2rem' }}>{successMessage}</p>}
       <div className="contact-form-container">
-        <div className='ruluko-regular' style={{ fontFamily: 'ruluko', textAlign: 'center', marginBottom: '15px', minWidth: '300px' }} >Contact Form</div>
+        <div className='ruluko-regular' style={{ color: 'rgb(102, 102, 102)', fontFamily: 'ruluko', textAlign: 'center', marginBottom: '25px', minWidth: '300px', fontSize: '1.4rem' }} >Contact Form</div>
 
       <Form className="contact-form input-width ruluko-regular" onSubmit={onSubmit} >
         {/* Name input */}
@@ -81,7 +81,7 @@ const ContactForm = () => {
         />
         </Form.Group>
         {/* Submit button */}
-        <Button data-mdb-ripple-init type="submit" style={{ marginTop: '10px' }} className="btn btn-warning btn-block mb-4 contact-button">Send</Button>
+        <Button data-mdb-ripple-init type="submit" style={{ marginTop: '10px' }}  variant='outline-success'>Send</Button>
     </Form>
     </div>
     </div>
