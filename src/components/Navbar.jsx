@@ -6,7 +6,8 @@ import '../static/fonts.css'
 
 const NavbarSCH = () => {
   const location = useLocation()
-console.log('location.pathname check:', location.pathname);
+  console.log('location.pathname check:', location.pathname)
+  const navigate = useNavigate()
 
 
   return (
@@ -14,7 +15,7 @@ console.log('location.pathname check:', location.pathname);
       <Container>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
-        <img className='navbar-logo' src="/images/e13ec4ad-6e33-4063-85e9-9d4ef641cb0a.JPG"></img>
+        <img onClick={() => navigate('/') } className='navbar-logo' src="/images/e13ec4ad-6e33-4063-85e9-9d4ef641cb0a.JPG"></img>
         <Nav className='ms-auto'>
           <Nav.Link href="#" as="span">
             <Link className='navbar-link inter-regular' to="/" state={{ from: location.pathname }}>Home</Link>

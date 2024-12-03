@@ -8,7 +8,7 @@ const Donate = () => {
     script.src = "https://js.stripe.com/v3/buy-button.js"
     script.async = true;
     document.body.appendChild(script)
-    
+  
     return () => {
       document.body.removeChild(script)
     }
@@ -31,15 +31,21 @@ const Donate = () => {
         </p>
         
       </div>
+
       <script async
         src="https://js.stripe.com/v3/buy-button.js">
       </script>
 
       <stripe-buy-button
-        buy-button-id="buy_btn_1QNBIKIdaV2VtQr7dENY0JIE"
-        publishable-key="pk_live_51Q0mIYIdaV2VtQr7Isl9Uz1buLBoH6mPmRB5bmicDGLMRDpN3IgIv0TC6WeX39XRHBeH3DAVCn7wwEPkPzmVUGhI000zhTGHDS"
+        buy-button-id="buy_btn_1QNev4GvxyfGgiW73yLSGUlh"
+        publishable-key="pk_live_51QNeO9GvxyfGgiW718Uh2NT6Vaou841UnTwsVR1tMpIfj45yZtzWloyGPwOi3OvVx5dhgSAebEAgVHvwwv6i2GJF00856yqhaC"
       >
       </stripe-buy-button>
+
+      <div>
+        <iframe loading="lazy" width="352" height="60" src="https://www.givey.com/embeds/SCH/donate?size=medium" style={{ border: 'none' }}></iframe>
+      </div>
+      
       <br/><p>
           Cheques payable to Saltergate Children’s Home, Ethiopia
         </p>

@@ -3,15 +3,19 @@ import ContactForm from '../components/ContactForm'
 
 const Contact = () => {
   return (
-    <div>
-      <div className="contact-image inter-regular">Contact Us</div>
+    <div className="contact-container">
+      <div>
+        <div className="contact-image inter-regular">
+          Contact Us
+        </div>
+      </div>
+
       <div className='contact-form-and-info' >
         <div className="contact-form">
-          <h3 style={{ color: 'rgb(102, 102, 102)'}}>Get in touch</h3>
           <ContactForm />
         </div>
         <div className="contact-info ruluko-regular">
-          <h3 style={{ color: 'rgb(102, 102, 102)'}}>Contact Us</h3><br/><br/><br/>
+          <h3 style={{ color: 'rgb(102, 102, 102)'}}>Contact Us</h3><br/>
           <div>
             UK Address:
           </div>

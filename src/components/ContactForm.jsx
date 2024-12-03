@@ -18,14 +18,14 @@ const ContactForm = () => {
     e.preventDefault()
 
     emailjs.send(
-      'SERVICE_KEY_HERE',
-      'TEMPLATE_KEY_HERE',
+      'service_ojuubem',
+      'template_2juem2u',
       {
         name: formData.name,
         email: formData.email,
         message: formData.message,
       },
-      'PUBLIC_KEY_HERE_IN_ACCOUNT_TAB'
+      'igo6C_vuTi7-iFHl1'
     ).then(() => {
       setSuccessMessage("Message sent, thank you. I'll get back to you soon")
       setFormData({ name: '', email: '', message: '' })
@@ -40,7 +40,7 @@ const ContactForm = () => {
     <div>
       {successMessage && <p className='rukulo-regular' style={{ fontFamily: 'ruluko', color: 'lightgreen', fontSize: '2.2rem' }}>{successMessage}</p>}
       <div className="contact-form-container">
-        <div className='ruluko-regular' style={{ color: 'rgb(102, 102, 102)', fontFamily: 'ruluko', textAlign: 'center', marginBottom: '25px', minWidth: '300px', fontSize: '1.4rem' }} >Contact Form</div>
+        <div className='ruluko-regular' style={{   boxShadow: 'inset 0 0 0 2000px rgba(2, 69, 0, 0.1)', color: 'rgb(102, 102, 102)', fontFamily: 'ruluko', textAlign: 'center', marginBottom: '25px', minWidth: '300px', fontSize: '1.4rem' }} >Contact Form</div>
 
       <Form className="contact-form input-width ruluko-regular" onSubmit={onSubmit} >
         {/* Name input */}
