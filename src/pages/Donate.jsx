@@ -16,8 +16,9 @@ const Donate = () => {
 
   return (
     <div className='donate-container'>
-      <div className='donate-imagine ruluko-regular'>Imagine...</div>
-      <img className='donate-photo' src='/images/beb048e7-2d49-4c24-ab93-782100983a02.JPG'></img>
+      <div className='donate-imagine ruluko-regular'>
+        Imagine...
+      </div>
       <div className='donate-text-container ruluko-regular'>
         <h3 className="donate-text-title ruluko-regular">Your Help Is Needed</h3>
         <p>
@@ -46,7 +47,7 @@ const Donate = () => {
         <iframe loading="lazy" width="352" height="60" src="https://www.givey.com/embeds/SCH/donate?size=medium" style={{ border: 'none' }}></iframe>
       </div>
       
-      <br/><p>
+      <br/><p className='cheques-text'>
           Cheques payable to Saltergate Children’s Home, Ethiopia
         </p>
         <p>
@@ -58,6 +59,7 @@ const Donate = () => {
         <p>
           Account Number 03248003
         </p>
+        <img className='donate-photo' src='/images/beb048e7-2d49-4c24-ab93-782100983a02.JPG'></img>
     </div>
   )
 }
