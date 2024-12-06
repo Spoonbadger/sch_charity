@@ -8,4 +8,4 @@
 
 - unstretch the cover image on the home page
 
-- auto deploy - it does will 'fly auth login' then 'fly deploy'
+- auto deploy - it does will 'flyctl auth login' then 'fly deploy'

@@ -181,7 +181,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('public/images/SCH image 7.webp');
+    background-image: url('/images/SCH image 7.webp');
     background-attachment: fixed;
     background-position: right center ;
     height: 50vh;
