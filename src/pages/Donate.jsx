@@ -59,7 +59,7 @@ const Donate = () => {
         <p>
           Account Number 03248003
         </p>
-        <img className='donate-photo' src='/images/beb048e7-2d49-4c24-ab93-782100983a02.JPG'></img>
+        <img className='donate-photo' src='/images/beb048e7-2d49-4c24-ab93-782100983a02.webp'></img>
     </div>
   )
 }

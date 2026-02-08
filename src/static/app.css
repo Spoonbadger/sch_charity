@@ -16,7 +16,7 @@ body {
   color: rgb(0, 155, 0);
   margin-left: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .navbar-link {
     color: lightgreen;
   }
@@ -45,7 +45,7 @@ body {
 
 .home-bg-image {
   background-image: url('/images/SCH image 8.webp');
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   background-size: 100% 120%;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.1);
@@ -58,19 +58,20 @@ body {
   font-size: 2rem;
   text-shadow: 20px black;
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .home-bg-image {
     height: 30vh;
     background-size: 120% 80%;
     background-position: -40px -50px;
     background-attachment: fixed;
+    transform: translateZ(40);
   }
 }
 
 .home-image {
   place-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
     .home-image {
       width: 100%;
       max-height: 30rem;
@@ -92,7 +93,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .home-text {
     margin-top: 3rem;
     font-size: 1.6rem;
@@ -117,7 +118,7 @@ body {
   margin-bottom: 50px;
   border: 2px solid darkgreen
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .eman-image {
     border: none;
   }
@@ -126,7 +127,7 @@ body {
 /* About page */
 .about-image {
   background-image: url('/images/Screenshot 2024-11-19 at 17.20.29.webp');
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   background-size: 110% 100%;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.2);
@@ -139,18 +140,19 @@ body {
   font-size: 2rem;
   text-shadow: 20px black;
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .about-image {
     height: 30vh;
     background-size: 170% 100%;
     background-position: -190px 0;
+    transform: translateZ(40);
   }
 }
 
 .about-text-container {
   margin: 6% 20% 12%;
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .about-text-container {
     margin: 6% 12% 20% 11%;
   }
@@ -184,12 +186,14 @@ body {
     background-image: url('/images/SCH image 7.webp');
     background-attachment: fixed;
     background-position: right center ;
-    height: 50vh;
+    height: 40vh;
     width: 100vw;
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .donate-imagine {
     background-position: -320px -200px;
+    height: 30vh;
+    transform: translateZ(40); /* sneaky way to trick browser into having fixed-background */
   }
 }
 
@@ -198,7 +202,7 @@ body {
   margin: 10px;
   border: 2px solid darkgreen;
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .donate-photo {
     border: none;
   }
@@ -213,7 +217,7 @@ body {
   color: rgb(102, 102, 102);
   font-size: 1.1rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
   .cheques-text {
     margin: 10px;
     display: flex;
@@ -234,9 +238,9 @@ body {
 
 .contact-image {
   background-image: url("/images/IMG_3110-1024x768.webp");
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
-  background-size: 110% 100%;
+  background-size: 100% 100%;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.1);
   background-attachment: fixed;
   background-position: 0 -20px;
@@ -247,12 +251,12 @@ body {
   font-size: 2rem;
   text-shadow: 20px black;
 }
-@media (max-width: 768px) {
+@media (max-width: 668px) {
     .contact-image {
       height: 30vh;
       width: 100vw;
       background-attachment: fixed;
-      background-position: 0 -110px;
+      transform: translateZ(40);
     }
   }
 

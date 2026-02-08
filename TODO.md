@@ -9,3 +9,6 @@
 - unstretch the cover image on the home page
 
 - auto deploy - it does will 'flyctl auth login' then 'fly deploy'
+
+
+- look into xcode to see how it actually looks on a phone.

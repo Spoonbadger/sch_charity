@@ -21,12 +21,12 @@ const Contact = () => {
           </div>
           <div style={{ color: 'rgb(102, 102, 102)'}}>
             <div style={{ marginTop: 5 }}>Saltergate Children’s Home,</div>
-            <div>62 Rhodesia Road,</div>
-            <div>Brampton,</div>
+            <div>10 Foxbrook Court,</div>
+            <div>Walton,</div>
             <div>Chesterfield,</div>
             <div>Derbyshire,</div>
             <div>United Kingdom,</div>
-            <div>S40 3AL</div>
+            <div>S40 3SS</div>
           </div>
           <br/>
           <div>Ethiopia Address:</div>
